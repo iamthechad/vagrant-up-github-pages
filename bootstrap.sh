@@ -3,7 +3,8 @@
 # article which can be found on XXX link
 
 CLONEREPO='https://github.com/kappataumu/kappataumu.github.com.git'
-CLONEDIR="$(basename $CLONEREPO)"
+#CLONEDIR="$(basename $CLONEREPO)"
+CLONEDIR="/srv/www"
 
 start_seconds="$(date +%s)"
 echo "Welcome to the initialization script."
