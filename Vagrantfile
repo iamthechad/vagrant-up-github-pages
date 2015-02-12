@@ -31,4 +31,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
   end
 
+  # Parallels-specific configuration
+  config.vm.provider "parallels" do |v, override|
+    override.vm.box = "parallels/ubuntu-12.04-i386"
+    v.name = "Github Pages"
+    v.memory = 512
+  end
+
 end
